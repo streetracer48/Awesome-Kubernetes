@@ -1,4 +1,4 @@
-# Awsome-Kubernetes
+# Cheat Sheet
 
 # Kubectl Context and Configuration
 
@@ -21,4 +21,15 @@ kubectl config set-credentials kubeuser/foo.kubernetes.com --username=kubeuser -
  ```
  kubectl apply -f example.yaml           # create resource(s)
 ```
+ # Viewing, Finding Resources
  
+ ```
+kubectl apply -f ./my-manifest.yaml            # create resource(s)
+kubectl apply -f ./my1.yaml -f ./my2.yaml      # create from multiple files
+kubectl apply -f ./dir                         # create resource(s) in all manifest files in dir
+kubectl apply -f https://git.io/vPieo          # create resource(s) from url
+kubectl create deployment nginx --image=nginx  # start a single instance of nginx
+kubectl explain pods                           # get the documentation for pod manifests 
+```
+ 
+
