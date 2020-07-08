@@ -8,7 +8,6 @@ kubectl config view # Show Merged kubeconfig settings.
 ```
 kubectl config view # Show Merged kubeconfig settings.
 ```
-
 # add a new user to your kubeconf 
 ```
 kubectl config set-credentials kubeuser/foo.kubernetes.com --username=kubeuser --password=kubepassword
