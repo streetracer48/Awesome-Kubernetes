@@ -1,7 +1,6 @@
 # Cheat Sheet
 
 # Kubectl Context and Configuration
-
 See Authenticating Across Clusters with kubeconfig documentation for detailed config file information.
 kubectl config view # Show Merged kubeconfig settings.
 
