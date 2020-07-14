@@ -10,3 +10,17 @@ spec:
       image: karimmdmirajul/multi-client
       ports:
         - containerPort: 9999
+        
+        
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server
+  labels:
+    component: web
+spec:
+  containers:
+    - name: server
+      image: karimmdmirajul/multi-server
+      ports:
+        - containerPort: 5000
